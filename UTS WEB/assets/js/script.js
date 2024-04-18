@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    alert("Selamat datang,\n\nSilahkan input data member!");
+    alert("Selamat datang, Silahkan input data member!");
 });

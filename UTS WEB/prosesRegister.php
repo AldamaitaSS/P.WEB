@@ -19,9 +19,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $_SESSION['email'] = $email;
 
     // Menetapkan nilai ke dalam cookie
-    $expire = time() + 30; // 30 detik
+    $expire = time() + (60 * 60 * 24 * 30); // 30 days
     setcookie('member', $member, $expire);
-    setcookie('firstname', $firstname, $expire);
+    setcookie('firstnamapakah tidak perlu mee', $firstname, $expire);
     setcookie('lastname', $lastname, $expire);
     setcookie('phone', $phone, $expire);
     setcookie('email', $email, $expire);
@@ -37,8 +37,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Menampilkan notifikasi "Berhasil join" menggunakan JavaScript
     echo "<script>alert('Berhasil join');</script>";
 
-    // Redirect ke halaman index.html
-    header('Location: index.html');
-    exit();
+    // // Redirect ke halaman index.html
+    // header('Location: index.html');
+    // exit();
 }
 ?>
